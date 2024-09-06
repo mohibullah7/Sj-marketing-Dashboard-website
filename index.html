@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <header class="border-2 border">
+  <header class="border-2 border rounded">
     <nav>
       <div class="container-fluid">
         <div class="row">
@@ -52,8 +52,8 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-3 d-lg-inline-block d-none">
-          <aside>
-            <div class="sider w-100" id="sliderid">
+          <aside >
+            <div class="sider w-100 rounded shadow" id="sliderid">
               <div class="employee w-100 d-flex px-2 justify-content-between">
                 <div class="userprofile mt-3 d-flex gap-2">
                   <div class="user-image border"></div>
@@ -62,25 +62,25 @@
                     <p class="m-0 designation">HR manager</p>
                   </div>
                 </div>
-                <div class="menu-icon bg-light rounded d-flex justify-content-center align-items-center mt-4">
+                <div class="menu-icon  rounded d-flex justify-content-center align-items-center mt-4">
                   <i class="ri-more-fill fs-4 fw-lighter"></i>
                 </div>
               </div>
 
               <div class="menu-items gap-3 mt-4 w-100 d-flex flex-column px-3 justify-content-evenly">
-                <div class="dashboard d-flex gap-3 align-items-center">
+                <div class="dashboard d-flex gap-3 align-items-center rounded">
                   <i class="ri-layout-4-fill fs-4 d-icons"></i>
                   <p class="m-0">Dashboard</p>
                 </div>
-                <div class="employees d-flex gap-3 align-items-center">
+                <div class="employees d-flex gap-3 align-items-center rounded">
                   <i class="ri-id-card-line fs-4 d-icons"></i>
                   <p class="m-0">Employees</p>
                 </div>
-                <div class="tickets d-flex gap-3 align-items-center">
+                <div class="tickets d-flex gap-3 align-items-center rounded">
                   <i class="ri-wallet-line fs-4 d-icons"></i>
                   <p class="m-0">Tickets</p>
                 </div>
-                <div class="attencence d-flex gap-3 align-items-center">
+                <div class="attencence d-flex gap-3 align-items-center rounded">
                   <i class="ri-briefcase-line fs-4 d-icons"></i>
                   <p class="m-0">Attendance</p>
                 </div>
@@ -179,9 +179,9 @@
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                  <div class="px-3 rounded border shadow">
-                    <div>
-                      <p class="m-0">Roles</p>
+                  <div class="px-3 py-3 rounded border shadow">
+                    <div class="roles mb-3">
+                      <p class="m-0 fw-semibold">Roles</p>
                     </div>
                     <div class="employee-data d-flex justify-content-between align-items-center">
                       <div class="circle-chart">
@@ -199,9 +199,9 @@
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                  <div class="px-3 rounded border shadow">
-                    <div>
-                      <p class="m-0">Departments</p>
+                  <div class="px-3 py-3 rounded border shadow">
+                    <div class="departments mb-3">
+                      <p class="m-0 fw-semibold">Departments</p>
                     </div>
                     <div class="employee-data d-flex justify-content-between align-items-center">
                       <div class="donut-chart">
@@ -219,8 +219,8 @@
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                  <div class="border rounded">
-                    <div>
+                  <div class="border rounded shadow px-1">
+                    <div class="">
                       <p class="employe-name">Tickets</p>
                     </div>
                     <table class="text-center">
@@ -380,6 +380,7 @@
                     </table>
                   </div>
                 </div>
+                
               </div>
             </div>
           </section>

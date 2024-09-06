@@ -48,6 +48,7 @@
   border-radius: 40px;
   background-image: url(/src/images/admin.jpg);
   background-size: cover;
+  background-position: center;
   
  }
  .menu-items p{
@@ -74,8 +75,8 @@ font-size: 0.8rem;
   opacity: 1;
  }
  .menu-icon{
-  height: 35px ;
-  width: 35px;
+  height: 31px ;
+  width: 38px;
  }
  .notify{
   height: 40px ;
@@ -107,7 +108,7 @@ font-size: 0.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 100px;
 }
 
 .circle {
@@ -121,16 +122,6 @@ font-size: 0.8rem;
     #240c9f 50% 100%  /* Lightest Blue, 50% */
   );
   position: relative;
-}
-
-.circle-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 24px;
-  font-weight: bold;
-  color: #000;
 }
 
 .data-info p{
@@ -155,7 +146,7 @@ font-size: 0.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 100px;
 }
 
 .donut {
@@ -215,4 +206,30 @@ th, td {
 .employe-name{
   font-weight: 600;
 }
+.dashboard:hover{
+  background-color: rgba(237, 236, 236, 0.775);
+  cursor: pointer;
+}
+.employees:hover{
+  background-color: rgba(237, 236, 236, 0.775);
+  cursor: pointer;
+}
+.tickets:hover{
+  background-color: rgba(237, 236, 236, 0.775);
+  cursor: pointer;
+}
+.attencence:hover{
+  background-color: rgba(237, 236, 236, 0.775);
+  cursor: pointer;
+}
+.userprofile:hover{
+cursor: pointer;
+}
+.menu-icon{
+  background-color: #efeded75;
+}
+.menu-icon:hover{
+cursor: pointer;
+background-color: #a9a9a9a5;
 
+}
