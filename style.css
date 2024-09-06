@@ -25,6 +25,10 @@
   /* border: 1px solid black; */
   /* position: sticky; */
   /* display: inline-block; */
+  /* position: static;
+  top: 0;
+  left: 0;
+  overflow: hidden; */
 }
 /* .section-1{
 
