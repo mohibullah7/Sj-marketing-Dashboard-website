@@ -1,195 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="Description" content="Enter your description here" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="Description" content="Enter your description here" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
-    <title>Title</title>
-  </head>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-  <body>
-    <header class="border-primary-subtle border-2 border  ">
-      <nav>
-        <div class="container-fluid ">
-          <div class="row">
-            <div class="col-lg-6 col-12 ">
-              <div
-                class=" logo-main d-flex justify-content-lg-between justify-content-evenly align-items-center"
-              >
-                <div class="logo"></div>
-                <input class="py-1 px-4 border rounded"  type="search" placeholder="Search" />
-                <!-- <a onclick="slider()" class="text-decoration-none text-black fs-5" href="#">
+  <title>Title</title>
+</head>
+
+<body>
+  <header class="border-2 border">
+    <nav>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <div class="logo-main d-flex justify-content-between align-items-center">
+              <div class="logo"></div>
+              <input class="py-1 px-lg-4 px-2 border rounded" type="search" placeholder="Search" />
+              <!-- <a onclick="slider()" class="text-decoration-none text-black fs-5" href="#">
                 <i class="ri-menu-line"></i>
               </a> -->
-              </div>
-            </div>
-            <div class="col-lg-6 col-12 d-lg-block d-none">
-              <div class="notifications d-flex justify-content-end align-items-center">
-                <div class="me-5 d-flex gap-3 fs-5 notify bg-light rounded flex justify-content-center align-items-center">
-                  <!-- <i class="ri-search-line"></i> -->
-                  <i class="ri-notification-2-fill"></i>
-                  <!-- <i class="ri-mail-fill"></i> -->
-                </div>
-              </div>
             </div>
           </div>
-        </div>
-      </nav>
-    </header>
-    <section>
-      <div class="conatiner-fluid">
-        <div class="row">
-          <div class="col-3 d-lg-inline-block d-none">
-            <aside>
-              <div class="sider border w-100" id="sliderid">
-                <div class="employee w-100 d-flex px-2 justify-content-between">
-                  <div class="userprofile mt-3 d-flex gap-2">
-                    <div class="user-image border"></div>
-                    <div class="user-info">
-                      <p class="m-0">Gavano</p>
-                      <p class="m-0   designation">HR manager</p>
-                    </div>
-                  </div>
-                  <div class="menu-icon  bg-light rounded d-flex justify-content-center align-items-center mt-4">
-                    <i class="ri-more-fill fs-4 fw-lighter"></i>
-                  </div>
-                </div>
-
-                <div
-                  class="menu-items gap-3 mt-4 w-100 d-flex flex-column px-3 justify-content-evenly"
-                >
-                  <div class="dashboard d-flex gap-3 align-items-center">
-                    <i class="ri-layout-4-fill fs-4  d-icons"></i>
-                    <p class="m-0">Dashboard</p>
-                  </div>
-                  <div class="employees d-flex gap-3 align-items-center">
-                    <i class="ri-id-card-line fs-4 d-icons"></i>
-                    <p class="m-0">Employees</p>
-                  </div>
-                  <div class="tickets d-flex gap-3 align-items-center">
-                    <i class="ri-wallet-line fs-4 d-icons"></i>
-                    <p class="m-0">Tickets</p>
-                  </div>
-                  <div class="attencence d-flex gap-3 align-items-center">
-                    <i class="ri-briefcase-line fs-4 d-icons"></i>
-                    <p class="m-0">Attendance</p>
-                  </div>
-                </div>
+          <div class="col-lg-6 col-12 d-lg-block d-none">
+            <div class="notifications d-flex justify-content-end align-items-center">
+              <div
+                class="me-5 d-flex gap-3 fs-5 notify bg-light rounded flex justify-content-center align-items-center">
+                <!-- <i class="ri-search-line"></i> -->
+                <i class="ri-notification-2-fill"></i>
+                <!-- <i class="ri-mail-fill"></i> -->
               </div>
-            </aside>
-          </div>
-          <div class="col-lg-9 col-12">
-            <section class=" mt-5">
-              <div class="container-fluid">
-                <div class="row gy-4">
-                  <div class="col-lg col-md-6 col-12">
-                    <div class="boxes border rounded shadow">
-                      <div class="box-heading">
-                        <p>Total Employees</p>
-                      </div>
-                      <div>
-                        <h5 class="m-0">856</h5>
-                        <div class="d-flex justify-content-between emp-txt">
-                          <p class="mt-2">Employee</p>
-                          <div class="prcnt rounded-pill bg-light d-flex justify-content-evenly align-items-center">
-                            <svg  class="g-icon " xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="16px" fill="#"><path d="m136-240-56-56 296-298 160 160 208-206H640v-80h240v240h-80v-104L536-320 376-480 136-240Z"/></svg>
-                            <p class=" text-primary m-0"> 10.0%</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg col-md-6 col-12">
-                    <div class="boxes border rounded shadow">
-                      <div class="box-heading">
-                        <p class="">Absent Employee</p>
-                      </div>
-                      <div>
-                        <h5 class="m-0">814</h5>
-                        <div class="d-flex justify-content-between emp-txt">
-                          <p class="mt-2">Employee</p>
-                          <div class="prcnt rounded-pill bg-light d-flex justify-content-evenly align-items-center">
-                            <svg class="g-icon" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="16px" fill="#"><path d="m136-240-56-56 296-298 160 160 208-206H640v-80h240v240h-80v-104L536-320 376-480 136-240Z"/></svg>
-                            <p class=" text-primary m-0"> 10.0%</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg col-md-6 col-12">
-                    <div class="boxes border rounded shadow">
-                      <div class="box-heading">
-                        <p>Absent Wihtout Reason</p>
-                      </div>
-                      <div>
-                        <h5 class="m-0">16</h5>
-                        <div class="d-flex justify-content-between emp-txt">
-                          <p class="mt-2">Employee</p>
-                          <div class="prcnt rounded-pill bg-light d-flex justify-content-evenly align-items-center">
-                            <svg class="g-icon" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="16px" fill="#"><path d="m136-240-56-56 296-298 160 160 208-206H640v-80h240v240h-80v-104L536-320 376-480 136-240Z"/></svg>
-                            <p class=" text-primary m-0"> 10.0%</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg col-md-6 col-12">
-                    <div class="boxes border rounded shadow">
-                      <div class="box-heading">
-                        <p>Number of leaves</p>
-                      </div>
-                      <div>
-                        <h5 class="m-0">26</h5>
-                        <div class="d-flex justify-content-between  emp-txt">
-                          <p class="mt-2">Employee</p>
-                          <div class="prcnt rounded-pill bg-light d-flex justify-content-evenly align-items-center">
-                            <svg class="g-icon" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="16px" fill="#5f6368"><path d="m136-240-56-56 296-298 160 160 208-206H640v-80h240v240h-80v-104L536-320 376-480 136-240Z"/></svg>
-                            <p class=" text-primary m-0"> 10.0%</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </nav>
+  </header>
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3 d-lg-inline-block d-none">
+          <aside>
+            <div class="sider w-100" id="sliderid">
+              <div class="employee w-100 d-flex px-2 justify-content-between">
+                <div class="userprofile mt-3 d-flex gap-2">
+                  <div class="user-image border"></div>
+                  <div class="user-info">
+                    <p class="m-0">Gavano</p>
+                    <p class="m-0 designation">HR manager</p>
+                  </div>
+                </div>
+                <div class="menu-icon bg-light rounded d-flex justify-content-center align-items-center mt-4">
+                  <i class="ri-more-fill fs-4 fw-lighter"></i>
+                </div>
+              </div>
 
-    <script src="/src/script.js"></script>
+              <div class="menu-items gap-3 mt-4 w-100 d-flex flex-column px-3 justify-content-evenly">
+                <div class="dashboard d-flex gap-3 align-items-center">
+                  <i class="ri-layout-4-fill fs-4 d-icons"></i>
+                  <p class="m-0">Dashboard</p>
+                </div>
+                <div class="employees d-flex gap-3 align-items-center">
+                  <i class="ri-id-card-line fs-4 d-icons"></i>
+                  <p class="m-0">Employees</p>
+                </div>
+                <div class="tickets d-flex gap-3 align-items-center">
+                  <i class="ri-wallet-line fs-4 d-icons"></i>
+                  <p class="m-0">Tickets</p>
+                </div>
+                <div class="attencence d-flex gap-3 align-items-center">
+                  <i class="ri-briefcase-line fs-4 d-icons"></i>
+                  <p class="m-0">Attendance</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-lg-9 col-12">
+          <section class="mt-5">
+            <div class="container-fluid">
+              <div class="row gy-4">
+                <div class="col-lg-3 col-md-6 col-12">
+                  <div class="boxes border rounded shadow">
+                    <div class="box-heading">
+                      <p>Total Employees</p>
+                    </div>
+                    <div>
+                      <h5 class="m-0">856</h5>
+                      <div class="d-flex justify-content-between emp-txt">
+                        <p class="mt-2">Employee</p>
+                        <div class="prcnt rounded-pill bg-light d-flex justify-content-evenly align-items-center">
+                          <svg class="g-icon" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                            width="16px" fill="#">
+                            <path
+                              d="m136-240-56-56 296-298 160 160 208-206H640v-80h240v240h-80v-104L536-320 376-480 136-240Z" />
+                          </svg>
+                          <p class="text-primary m-0">10.0%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                  <div class="boxes border rounded shadow">
+                    <div class="box-heading">
+                      <p class="">Absent Employee</p>
+                    </div>
+                    <div>
+                      <h5 class="m-0">814</h5>
+                      <div class="d-flex justify-content-between emp-txt">
+                        <p class="mt-2">Employee</p>
+                        <div class="prcnt rounded-pill bg-light d-flex justify-content-evenly align-items-center">
+                          <svg class="g-icon" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                            width="16px" fill="#">
+                            <path
+                              d="m136-240-56-56 296-298 160 160 208-206H640v-80h240v240h-80v-104L536-320 376-480 136-240Z" />
+                          </svg>
+                          <p class="text-primary m-0">10.0%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+                <div class="col-lg-3 col-md-6 col-12">
+                  <div class="boxes border rounded shadow">
+                    <div class="box-heading">
+                      <p>Absent Wihtout Reason</p>
+                    </div>
+                    <div>
+                      <h5 class="m-0">16</h5>
+                      <div class="d-flex justify-content-between emp-txt">
+                        <p class="mt-2">Employee</p>
+                        <div class="prcnt rounded-pill bg-light d-flex justify-content-evenly align-items-center">
+                          <svg class="g-icon" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                            width="16px" fill="#">
+                            <path
+                              d="m136-240-56-56 296-298 160 160 208-206H640v-80h240v240h-80v-104L536-320 376-480 136-240Z" />
+                          </svg>
+                          <p class="text-primary m-0">10.0%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                  <div class="boxes border rounded shadow">
+                    <div class="box-heading">
+                      <p>Number of leaves</p>
+                    </div>
+                    <div>
+                      <h5 class="m-0">26</h5>
+                      <div class="d-flex justify-content-between emp-txt">
+                        <p class="mt-2">Employee</p>
+                        <div class="prcnt rounded-pill bg-light d-flex justify-content-evenly align-items-center">
+                          <svg class="g-icon" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                            width="16px" fill="#5f6368">
+                            <path
+                              d="m136-240-56-56 296-298 160 160 208-206H640v-80h240v240h-80v-104L536-320 376-480 136-240Z" />
+                          </svg>
+                          <p class="text-primary m-0">10.0%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="px-3 rounded border shadow">
+                    <div>
+                      <p class="m-0">Roles</p>
+                    </div>
+                    <div class="employee-data d-flex justify-content-between align-items-center">
+                      <div class="circle-chart">
+                        <div class="circle"></div>
+                      </div>
+                      <div class="data-info">
+                        <p><i class="ri-circle-fill emp1"></i> Employee</p>
+                        <p><i class="ri-circle-fill emp2"></i>Team leader</p>
+                        <p><i class="ri-circle-fill emp3"></i>Manager</p>
+                        <p>
+                          <i class="ri-circle-fill emp4"></i>Administration
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="px-3 rounded border shadow">
+                    <div>
+                      <p class="m-0">Departments</p>
+                    </div>
+                    <div class="employee-data d-flex justify-content-between align-items-center">
+                      <div class="donut-chart">
+                        <div class="donut"></div>
+                      </div>
+                      <div class="data-info">
+                        <p><i class="ri-circle-fill emp1"></i> Employee</p>
+                        <p><i class="ri-circle-fill emp2"></i>Team leader</p>
+                        <p><i class="ri-circle-fill emp3"></i>Manager</p>
+                        <p>
+                          <i class="ri-circle-fill emp4"></i>Administration
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="border rounded">
+                    <div>
+                      <p class="employe-name">Tickets</p>
+                    </div>
+                    <table class="text-center">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Manager</th>
+                          <th>Finance</th>
+                          <th>HR</th>
+                        </tr>
+                      </thead>
+                      <tbody class="text-center">
+                        <tr>
+                          <td class="employe-name">Alice</td>
+                          <td class="accept">Accept</td>
+                          <td class="accept">Accept</td>
+                          <td>
+                            <span class="material-symbols-outlined accepted">
+                              check_circle
+                            </span>
+                            <span class="material-symbols-outlined rejected">
+                              cancel
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="employe-name">Bob</td>
+                          <td class="pending">pending</td>
+                          <td class="pending">pending</td>
+                          <td>
+                            <span class="material-symbols-outlined accepted">
+                              check_circle
+                            </span>
+                            <span class="material-symbols-outlined rejected">
+                              cancel
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="employe-name">Carol</td>
+                          <td class="reject">Reject</td>
+                          <td class="reject">Reject</td>
+                          <td>
+                            <span class="material-symbols-outlined accepted">
+                              check_circle
+                            </span>
+                            <span class="material-symbols-outlined rejected">
+                              cancel
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="employe-name">Dave</td>
+                          <td class="accept">Accept</td>
+                          <td class="accept">Accept</td>
+                          <td>
+                            <span class="material-symbols-outlined accepted">
+                              check_circle
+                            </span>
+                            <span class="material-symbols-outlined rejected">
+                              cancel
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="employe-name">Eve</td>
+                          <td class="pending">pending</td>
+                          <td class="pending">pending</td>
+                          <td>
+                            <span class="material-symbols-outlined accepted">
+                              check_circle
+                            </span>
+                            <span class="material-symbols-outlined rejected">
+                              cancel
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="employe-name">Frank</td>
+                          <td class="reject">Reject</td>
+                          <td class="reject">Reject</td>
+                          <td>
+                            <span class="material-symbols-outlined accepted">
+                              check_circle
+                            </span>
+                            <span class="material-symbols-outlined rejected">
+                              cancel
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="employe-name">Grace</td>
+                          <td class="accept">Accept</td>
+                          <td class="accept">Accept</td>
+                          <td>
+                            <span class="material-symbols-outlined accepted">
+                              check_circle
+                            </span>
+                            <span class="material-symbols-outlined rejected">
+                              cancel
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="employe-name">Hank</td>
+                          <td class="pending">pending</td>
+                          <td class="pending">pending</td>
+                          <td>
+                            <span class="material-symbols-outlined accepted">
+                              check_circle
+                            </span>
+                            <span class="material-symbols-outlined rejected">
+                              cancel
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="employe-name">Ivy</td>
+                          <td class="reject">Reject</td>
+                          <td class="reject">Reject</td>
+                          <td>
+                            <span class="material-symbols-outlined accepted">
+                              check_circle
+                            </span>
+                            <span class="material-symbols-outlined rejected">
+                              cancel
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="employe-name">Jack</td>
+                          <td class="accept">Accept</td>
+                          <td class="accept">Accept</td>
+                          <td>
+                            <span class="material-symbols-outlined accepted">
+                              check_circle
+                            </span>
+                            <span class="material-symbols-outlined rejected">
+                              cancel
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="employe-name">Kate</td>
+                          <td class="pending">pending</td>
+                          <td class="pending">pending</td>
+                          <td>
+                            <span class="material-symbols-outlined accepted">
+                              check_circle
+                            </span>
+                            <span class="material-symbols-outlined rejected">
+                              cancel
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="/src/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

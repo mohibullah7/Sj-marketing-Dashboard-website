@@ -92,7 +92,7 @@ font-size: 0.8rem;
   fill: rgb(0, 60, 255);
  }
  .logo-main input{
-  background-image: url(/src/images/search-line.png);
+  /* background-image: url(/src/images/search-line.png); */
   background-repeat: no-repeat;
   background-position: 4px center;
   /* padding-left: 35px; */
@@ -100,5 +100,119 @@ font-size: 0.8rem;
  }
  .logo-main   input::placeholder {
   color: #999; /* Placeholder color */
-  padding-left: 10px; /* Extra padding inside placeholder */
+  /* padding-left: 10px;  */
 }
+
+.circle-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #57c1f1 0% 10%,   /* Dark Blue, 10% */
+    #97a2b5 10% 30%,  /* Medium Dark Blue, 20% */
+    #665191 30% 50%,  /* Lighter Blue, 20% */
+    #240c9f 50% 100%  /* Lightest Blue, 50% */
+  );
+  position: relative;
+}
+
+.circle-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.data-info p{
+  font-size:0.8rem ;
+  margin: 0;
+  opacity: 0.7;
+}
+.emp1{
+  color:#57c1f1;
+}
+.emp2{
+  color: #97a2b5;
+}
+.emp3{
+  color:#665191 ;
+}
+.emp4{
+  color: #240c9f ;
+}
+
+.donut-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.donut {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #003f5c 0% 10%,   /* Dark Blue, 10% */
+    #2f4b7c 10% 30%,  /* Medium Dark Blue, 20% */
+    #665191 30% 50%,  /* Lighter Blue, 20% */
+    #a05195 50% 100%  /* Lightest Blue, 50% */
+  );
+  position: relative;
+}
+
+.donut::before {
+  content: "";
+  position: absolute;
+  width: 60px; /* Size of the hole in the middle */
+  height: 60px;
+  background-color: #fff; /* Color of the hole */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+
+.accept{
+  color: green;
+
+}
+.reject{
+  color: red;
+}
+.pending{
+  color: gray;
+}
+
+.rejected{
+  color: red;
+}
+.accepted{
+  color: green;
+}
+.employe-name{
+  font-weight: 600;
+}
+
