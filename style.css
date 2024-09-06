@@ -1,0 +1,104 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.logo-main{
+  /* width: 20vw; */
+  height: 60px;
+}
+.logo{
+  background-image: url(/src/images/SJ\ Marketing\ Logo-08\ \(1\).png);
+  background-size: cover;
+  object-fit: cover;
+  width: 100px ;
+  height: 60px;
+  background-position: center;
+}
+.notifications{
+  /* width: 40px; */
+  height: 60px;
+}
+.sider{
+  /* width: 40%; */
+  height: 100vh;
+  /* border: 1px solid black; */
+  /* position: sticky; */
+  /* display: inline-block; */
+}
+/* .section-1{
+
+} */
+ .boxes{
+  height: auto;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+ }
+ .boxes p{
+  font-size: 0.8rem;
+ }
+ .boxes h5{
+  font-weight: 700;
+ }
+ .user-image{
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  background-image: url(/src/images/admin.jpg);
+  background-size: cover;
+  
+ }
+ .menu-items p{
+ font-weight: 500;
+ font-size: 0.8rem;
+ }
+ .menu-items i{
+ font-weight: 200;
+ }
+ .box-heading p{
+font-weight: 700;
+font-size: 0.8rem;
+ }
+ .emp-txt p{
+  font-size: 0.7rem;
+  opacity: 0.7;
+ }
+ .prcnt{
+  height: 30px ;
+  width: 60px;
+  
+ }
+ .prcnt p{
+  opacity: 1;
+ }
+ .menu-icon{
+  height: 35px ;
+  width: 35px;
+ }
+ .notify{
+  height: 40px ;
+  width: 45px;
+ }
+ .designation{
+  font-size: 0.7rem;
+  opacity: 0.7;
+ }
+ .d-icons{
+  opacity: 0.6;
+ }
+ .g-icon{
+  fill: rgb(0, 60, 255);
+ }
+ .logo-main input{
+  background-image: url(/src/images/search-line.png);
+  background-repeat: no-repeat;
+  background-position: 4px center;
+  /* padding-left: 35px; */
+  fill: #bbb; /* Lighter gray color */
+ }
+ .logo-main   input::placeholder {
+  color: #999; /* Placeholder color */
+  padding-left: 10px; /* Extra padding inside placeholder */
+}
