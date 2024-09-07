@@ -285,14 +285,14 @@ background-color: #a9a9a9a5;
 }
 
 .bar {
-  width: 40px;
+  width: 5vw;
   color: #fff;
   text-align: center;
   font-size: 12px;
   padding-top: 5px;
   border-radius: 5px 5px 0 0;
   position: relative;
-  margin-right: 10px;
+  margin-right: 20px;
   
 }
 
@@ -300,18 +300,39 @@ background-color: #a9a9a9a5;
   position: absolute;
   top: 0;
   left: 0;
-  width: 250px;
+  /* width: 250px; */
+  background-color: white;
 }
 
-/* For large screens (lg and up) */
+
 @media (min-width: 992px) {
   #offcanvas {
       position: relative;
   }
+  .bar {
+    width:2.5vw /* Your custom value for medium screens */;
+    margin-right: 10px;
+  }
 }
-/* For medium screens (md) and larger */
+
 @media (min-width: 768px) {
   #offcanvas {
       position: relative;
   }
+  .bar {
+    width:2.5vw /* Your custom value for medium screens */;
+    margin-right: 10px;
+  }
 }
+@media (min-width: 576px) {
+  .bar {
+    width: 2.6vw; 
+    margin-right: 10px;
+  }
+}
+
+
+
+
+ 
+
