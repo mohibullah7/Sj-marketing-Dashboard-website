@@ -21,26 +21,38 @@
 </head>
 
 <body>
-  <header class="border-2 border rounded">
+  <header class="border-2 border rounded position-sticky top-0 z-3 bg-white">
     <nav>
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6 col-12">
             <div class="logo-main d-flex justify-content-between align-items-center">
+              <a class="text-decoration-none text-dark d-lg-none d-inline-block" href="#">
+                <i class="ri-menu-line fs-3 "></i>
+              </a>
               <div class="logo"></div>
-              <input class="py-1 px-lg-4 px-2 border rounded" type="search" placeholder="Search" />
+              <input class="py-1 px-lg-4 d-lg-inline-block d-none px-2 border rounded" type="search" placeholder="Search" />
               <!-- <a onclick="slider()" class="text-decoration-none text-black fs-5" href="#">
                 <i class="ri-menu-line"></i>
               </a> -->
             </div>
           </div>
-          <div class="col-lg-6 col-12 d-lg-block d-none">
+          <div class="col-lg-6 col-12 ">
             <div class="notifications d-flex justify-content-end align-items-center">
               <div
-                class="me-5 d-flex gap-3 fs-5 notify bg-light rounded flex justify-content-center align-items-center">
+                class="me-5 d-flex gap-3 fs-5 notify bg-light rounded flex justify-content-center align-items-center d-lg-flex d-none">
+
+               
+                <!-- <div class="user-image-h border  d-lg-none d-inline-block"></div> -->
                 <!-- <i class="ri-search-line"></i> -->
                 <i class="ri-notification-2-fill"></i>
                 <!-- <i class="ri-mail-fill"></i> -->
+              </div>
+              <div class="userprofile  d-flex d-lg-none">
+                <div class="user-image border"></div>
+                <!-- <div class="user-info">
+                  
+                </div> -->
               </div>
             </div>
           </div>
@@ -48,12 +60,12 @@
       </div>
     </nav>
   </header>
-  <section>
+  <section class="z-1">
     <div class="container-fluid">
       <div class="row">
         <div class="col-3 d-lg-inline-block d-none">
           <aside >
-            <div class="sider w-100 rounded shadow" id="sliderid">
+            <div class="sider  w-100 rounded shadow" id="sliderid">
               <div class="employee w-100 d-flex px-2 justify-content-between">
                 <div class="userprofile mt-3 d-flex gap-2">
                   <div class="user-image border"></div>
@@ -197,6 +209,41 @@
                       </div>
                     </div>
                   </div>
+                  <!-- second div -->
+                  <div class="px-3 py-3 rounded border shadow mt-3">
+                    <div class="roles mb-3">
+                      <p class="m-0 fw-semibold">Roles</p>
+                    </div>
+                    <div class="employee-data d-flex justify-content-between align-items-center">
+                      <div class="chart-container">
+                        <div class="y-axis">
+                            <div class="y-label">100</div>
+                            <div class="y-label">80</div>
+                            <div class="y-label">60</div>
+                            <div class="y-label">40</div>
+                            <div class="y-label">20</div>
+                        </div>
+                        <div class="bars-container ps-3">
+                            <div class="bar" style="height: 30%; background-color: #084166;"></div>
+                            <div class="bar" style="height: 40%; background-color: #084166;"></div>
+                            <div class="bar" style="height: 50%; background-color: #084166;"></div>
+                            <div class="bar" style="height: 40%; background-color: #084166;"></div>
+                            <div class="bar" style="height: 80%; background-color: #084166;"></div>
+                        </div>
+                    </div>
+                      <!-- <div class="circle-chart">
+                        <div class="circle"></div>
+                      </div>
+                      <div class="data-info">
+                        <p><i class="ri-circle-fill emp1"></i> Employee</p>
+                        <p><i class="ri-circle-fill emp2"></i>Team leader</p>
+                        <p><i class="ri-circle-fill emp3"></i>Manager</p>
+                        <p>
+                          <i class="ri-circle-fill emp4"></i>Administration
+                        </p>
+                      </div> -->
+                    </div>
+                  </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
                   <div class="px-3 py-3 rounded border shadow">
@@ -218,6 +265,7 @@
                     </div>
                   </div>
                 </div>
+              
                 <div class="col-lg-4 col-md-6 col-12">
                   <div class="border rounded shadow px-1">
                     <div class="">

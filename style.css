@@ -55,6 +55,15 @@
   background-position: center;
   
  }
+ .user-image-h{
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  background-image: url(/src/images/admin.jpg);
+  background-size: cover;
+  background-position: center;
+  
+ }
  .menu-items p{
  font-weight: 500;
  font-size: 0.8rem;
@@ -237,3 +246,90 @@ cursor: pointer;
 background-color: #a9a9a9a5;
 
 }
+
+.chart-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: auto;
+  height: 200px;
+  padding: 10px;
+  position: relative;
+}
+
+.y-axis {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.y-label {
+  position: relative;
+  left: -10px;
+  font-size: 14px;
+}
+
+.bars-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* border-left: 2px solid #333; */
+  /* border-bottom: 2px solid #333; */
+}
+
+.bar {
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 5px;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  margin-right: 10px;
+  
+}
+
+/* .bar::after {
+  content: attr(data-city);
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  text-align: center;
+  color: #333;
+} */
+
+/* .bars-container::before {
+  content: "";
+  position: absolute;
+  margin-left: 20px;
+  top: 5%;
+  left: 0;
+  width: 70%;
+  height: 1px;
+  background: #ddd;
+}
+
+.bars-container::before,
+.bars-container::after,
+.bars-container .y-labels {
+  content: "";
+  position: absolute;
+  left: -10px;
+  border-bottom: 1px dashed #333;
+  width: 70%;
+  top: 20%;
+  transform: translateY(-50%);
+} */
+
+/* .y-labels {
+  position: absolute;
+  width: 20px;
+ 
+} */
