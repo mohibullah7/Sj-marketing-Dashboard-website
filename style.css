@@ -296,40 +296,22 @@ background-color: #a9a9a9a5;
   
 }
 
-/* .bar::after {
-  content: attr(data-city);
+#offcanvas {
   position: absolute;
-  bottom: -25px;
-  width: 100%;
-  text-align: center;
-  color: #333;
-} */
-
-/* .bars-container::before {
-  content: "";
-  position: absolute;
-  margin-left: 20px;
-  top: 5%;
+  top: 0;
   left: 0;
-  width: 70%;
-  height: 1px;
-  background: #ddd;
+  width: 250px;
 }
 
-.bars-container::before,
-.bars-container::after,
-.bars-container .y-labels {
-  content: "";
-  position: absolute;
-  left: -10px;
-  border-bottom: 1px dashed #333;
-  width: 70%;
-  top: 20%;
-  transform: translateY(-50%);
-} */
-
-/* .y-labels {
-  position: absolute;
-  width: 20px;
- 
-} */
+/* For large screens (lg and up) */
+@media (min-width: 992px) {
+  #offcanvas {
+      position: relative;
+  }
+}
+/* For medium screens (md) and larger */
+@media (min-width: 768px) {
+  #offcanvas {
+      position: relative;
+  }
+}
