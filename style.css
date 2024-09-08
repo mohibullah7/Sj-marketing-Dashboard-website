@@ -187,7 +187,7 @@ font-size: 0.8rem;
   transform: translate(-50%, -50%);
 }
 
-table {
+/* table {
   width: 100%;
   border-collapse: collapse;
 }
@@ -196,7 +196,38 @@ th, td {
   padding: 5px;
   text-align: left;
   font-size: 0.8rem;
+} */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
 }
+
+/* Set a min-width for table to prevent it from shrinking too much */
+table {
+  min-width: 350px; /* Adjust this according to your content */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: left;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  th, td {
+    font-size: 0.7rem; /* Reduce font-size on smaller screens */
+    padding: 3px;
+  }
+}
+
+
 
 
 .accept{

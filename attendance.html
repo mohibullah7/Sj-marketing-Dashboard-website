@@ -93,17 +93,17 @@
         <div class="col-md-9 col-12">
           <section class="mt-5">
             <div class="container-fluid">
-              <div class="row gy-4 ">
+              <div class="row gy-2 ">
                 <div class="col-12">
                   <div class="w-100">
                     <div class="w-100">
                       <h5 class="">Real time Attendence</h5>
                     </div>
 
-                    <div class="query px-4 py-2 w-75 border rounded bg-light">
+                    <div class="query px-lg-4 px-0 py-2  border rounded bg-light">
                       <div class="company">
                         <label class="me-2 fs-6" for="select">Company</label>
-                        <select class="px-md-5 ms-4 px-3  rounded" name="" id="">
+                        <select class="px-md-5 ms-lg-4 ms-1 px-3  rounded" name="" id="">
                           <option value="" selected>company</option>
                           <option value="">xyz</option>
                           <option value="">Abc</option>
@@ -113,9 +113,9 @@
                         </button>
                       </div>
                       <div class="choose-date mt-2">
-                        <label class="me-2 fs-6" for="date">Choose Date</label>
-                        <input class="px-md-4 px-3  rounded" type="date" name="" id="">
-                        <button class="q-btn ms-3"><i class="ri-search-line"></i> Get</button>
+                        <label class="me-lg-2 me-1 fs-6" for="date">Choose Date</label>
+                        <input class="px-md-4 px-0  rounded" type="date" name="" id="">
+                        <button class="q-btn ms-lg-3 ms-0"><i class="ri-search-line"></i> Get</button>
                       </div>
                     </div>
                   </div>
@@ -123,7 +123,105 @@
                 <div class="col-12">
                   <div class="">
                     <div class="employee-table">
-                       <table>
+                      <div class="table-responsive">
+                        <table class="empl-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Company</th>
+                                    <th>Position</th>
+                                    <th>Date</th>
+                                    <th>Day</th>
+                                    <th>Punch In Time</th>
+                                    <th>Punch Out Time</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>XYZ Corp</td>
+                                    <td>Developer</td>
+                                    <td>2024-09-08</td>
+                                    <td>Monday</td>
+                                    <td>09:00 AM</td>
+                                    <td>05:00 PM</td>
+                                    <td>Present</td>
+                                </tr>
+                                <tr>
+                                    <td>Jane Smith</td>
+                                    <td>ABC Inc</td>
+                                    <td>Designer</td>
+                                    <td>2024-09-08</td>
+                                    <td>Monday</td>
+                                    <td>09:15 AM</td>
+                                    <td>05:15 PM</td>
+                                    <td>Present</td>
+                                </tr>
+                                <tr>
+                                    <td>David Johnson</td>
+                                    <td>XYZ Corp</td>
+                                    <td>Manager</td>
+                                    <td>2024-09-08</td>
+                                    <td>Monday</td>
+                                    <td>09:05 AM</td>
+                                    <td>05:05 PM</td>
+                                    <td>Present</td>
+                                </tr>
+                                <tr>
+                                    <td>Susan Lee</td>
+                                    <td>Tech Solutions</td>
+                                    <td>Engineer</td>
+                                    <td>2024-09-08</td>
+                                    <td>Monday</td>
+                                    <td>08:45 AM</td>
+                                    <td>04:45 PM</td>
+                                    <td>Present</td>
+                                </tr>
+                                <tr>
+                                    <td>Michael Brown</td>
+                                    <td>ABC Inc</td>
+                                    <td>Analyst</td>
+                                    <td>2024-09-08</td>
+                                    <td>Monday</td>
+                                    <td>09:20 AM</td>
+                                    <td>05:20 PM</td>
+                                    <td>Present</td>
+                                </tr>
+                                <tr>
+                                    <td>Emily Davis</td>
+                                    <td>XYZ Corp</td>
+                                    <td>Intern</td>
+                                    <td>2024-09-08</td>
+                                    <td>Monday</td>
+                                    <td>09:30 AM</td>
+                                    <td>05:30 PM</td>
+                                    <td>Present</td>
+                                </tr>
+                                <tr>
+                                    <td>Robert Wilson</td>
+                                    <td>Tech Solutions</td>
+                                    <td>HR</td>
+                                    <td>2024-09-08</td>
+                                    <td>Monday</td>
+                                    <td>08:55 AM</td>
+                                    <td>04:55 PM</td>
+                                    <td>Present</td>
+                                </tr>
+                                <tr>
+                                    <td>Linda Martinez</td>
+                                    <td>ABC Inc</td>
+                                    <td>Support</td>
+                                    <td>2024-09-08</td>
+                                    <td>Monday</td>
+                                    <td>09:10 AM</td>
+                                    <td>05:10 PM</td>
+                                    <td>Present</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                       <!-- <table>
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -218,7 +316,7 @@
                                 <td>Present</td>
                             </tr>
                         </tbody>
-                    </table>
+                    </table> -->
                     </div>
                     <nav aria-label="Page navigation example">
                       <ul class="pagination">
