@@ -62,7 +62,7 @@
   </header>
   <section class="">
     <div class="container-fluid">
-      <div class="row position-relative">
+      <div class="row position-relative gx-1">
         <div id="offcanvas" class="col-3 d-md-inline-block d-none z-1  ">
           <aside>
             <div class="sider  rounded shadow " id="sliderid">
@@ -117,7 +117,7 @@
         <div class="col-md-9  col-12">
           <section class="mt-5">
             <div class="container-fluid">
-              <div class="row gy-4">
+              <div class="row gx-2 gy-4">
                 <div class="col-lg-3 col-md-6 col-6">
                   <div class="boxes border rounded shadow">
                     <div class="box-heading">
@@ -183,7 +183,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-3 col-md-6 col-6 border">
                   <div class="boxes border rounded shadow">
                     <div class="box-heading">
                       <p>Number of leaves</p>
@@ -204,77 +204,72 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12 ">
-                  <div class=" py-3 px-3 rounded border shadow justify-content-between align-items-center">
-                    <!-- <div id="piechart" style="width: 300px; height: 300px;" ></div> -->
-                    <div class="roles mb-3">
-                      <p class="m-0 fw-semibold">Roleees</p>
+
+                <div class="col-lg-4 col-md-6 col-12 border">
+
+                  <div class="py-1 px-1 rounded border shadow ">
+                    <div class="roles mt-2 ms-3">
+                      <p class="m-0 fw-semibold fs-5">Roles</p>
                     </div>
-                    <div class="employee-data d-flex justify-content-between align-items-center">
-                      <div class="circle-chart">
-                        <!-- <div class="circle-chart">
-                          <canvas id="myChart"></canvas>
-                        </div> -->
-                        <div class="circle"></div>
-                      </div>
-                      <div class="data-info">
-                        <p><i class="ri-circle-fill emp1"></i> Employee</p>
-                        <p><i class="ri-circle-fill emp2"></i>Team leader</p>
-                        <p><i class="ri-circle-fill emp3"></i>Manager</p>
-                        <p>
-                          <i class="ri-circle-fill emp4"></i>Administration
-                        </p>
+                    <div class="pie-chart-container">
+                      <div class="pie-chart">
+                        <canvas id="chart1"></canvas>
                       </div>
                     </div>
                   </div>
-                  <!-- second div -->
-                  <div class="px-3 py-3 rounded border shadow mt-3">
-                    <div class="roles mb-3">
-                      <p class="m-0 fw-semibold">Roles</p>
+                  
+
+                  <!-- <div class=" py-1 px-1 rounded border shadow justify-content-between align-items-center">
+                   
+                    <div class="roles mt-2 ms-3">
+                      <p class="m-0 fw-semibold fs-5">Roles</p>
                     </div>
-                    <div class="employee-data d-flex justify-content-between align-items-center order-lg-2 order-1">
-                      <div class="chart-container">
-                        <div class="y-axis">
-                          <div class="y-label">100</div>
-                          <div class="y-label">80</div>
-                          <div class="y-label">60</div>
-                          <div class="y-label">40</div>
-                          <div class="y-label">20</div>
-                        </div>
-                        <div class="bars-container ps-3">
-                          <div class="bar" style="height: 30%; background-color: #084166;"></div>
-                          <div class="bar" style="height: 40%; background-color: #084166;"></div>
-                          <div class="bar" style="height: 50%; background-color: #084166;"></div>
-                          <div class="bar" style="height: 40%; background-color: #084166;"></div>
-                          <div class="bar" style="height: 80%; background-color: #084166;"></div>
-                        </div>
-                      </div>
+                    <div class="">
+                      <div class="pie-chart">
+                      <canvas id="chart1"></canvas>
+                    </div>
 
                     </div>
+                  </div> -->
+
+                  <!-- second div -->
+                  <div class=" py-3 rounded border shadow mt-3">
+
+                     <div class="roles px-3 mb-2">
+                      <p class="m-0 fw-semibold">Branch</p>
+                    </div>
+
+                    <div class="chart-container2 d-flex">
+                      <div class="chart-wrapper2">
+                        <canvas id="chart2"></canvas>
+                      </div>
+                    </div>
+
+                   
+
+                  
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                  <div class="px-3 py-3 rounded border shadow">
+                <div class="col-lg-4 col-md-6 col-12 border">
+                  <div class="py-1 px-1 rounded border shadow ">
+                    <div class="roles mt-2 ms-3">
+                      <p class="m-0 fw-semibold fs-5">Departments</p>
+                    </div>
+                    <div class="pie-chart-container mt-2">
+                      <div class="pie-chart">
+                        <canvas id="chart3"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="px-3 py-3 rounded border shadow">                 
                     <div class="departments mb-3">
                       <p class="m-0 fw-semibold">Departments</p>
                     </div>
-                    <div class="employee-data d-flex justify-content-between align-items-center">
-                      <div class="donut-chart">
-                        <div class="donut"></div>
-                      </div>
-                      <div class="data-info">
-                        <p><i class="ri-circle-fill emp1"></i> Employee</p>
-                        <p><i class="ri-circle-fill emp2"></i>Team leader</p>
-                        <p><i class="ri-circle-fill emp3"></i>Manager</p>
-                        <p>
-                          <i class="ri-circle-fill emp4"></i>Administration
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+
+                  </div> -->
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4 col-md-6 col-12 border">
                   <div class="border rounded shadow px-1">
                     <div class="">
                       <p class="employe-name">Tickets</p>
@@ -447,9 +442,16 @@
     </div>
   </section>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/chart1.js"></script>
+  <script src="/branchChart.js"></script>
+  <script src="department.js"></script>
   <script src="/script.js"></script>
+
  
-  <script src="path/to/chartjs/dist/chart.umd.js"></script
+  
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
