@@ -364,7 +364,7 @@ background-color: #a9a9a9a5;
 
 
 .pie-chart {
-  height: 220px;
+  height: auto;
   width: 100%;
 }
 
@@ -375,7 +375,7 @@ background-color: #a9a9a9a5;
   width: 100%;
   /* border: 1px solid black; */
   /* padding: 0; */
-  height: 220px;
+  height: auto;
 }
 
 .py-1.px-1 {
@@ -398,5 +398,7 @@ background-color: #a9a9a9a5;
   height: 100%;
 }
 
- 
-
+/* .f-size{
+  height: 250px;
+  width: 100%;
+} */
